@@ -8,7 +8,7 @@ Licence URI: http://www.os-templates.com/template-terms
 -->
 <html>
 <head>
-<title>Expression | Pages | Full Width</title>
+<title>Karte</title>
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 <meta name="description" content="Google Maps API V3: Custom Directions Panel" />
@@ -27,21 +27,9 @@ Licence URI: http://www.os-templates.com/template-terms
 
 </head>
 <body id="top">
-  <div class="wrapper navtop">
-    <header id="header" class="clear">
-      <nav id="mainav">
-        <ul class="clear">
-          <li><img class="ictop" src="../images/music.png" alt=""></li>
-          <li><img class="ictop" src="../images/karte.png" alt=""></li>
-          <li><img class="ictop" src="../images/kontakte.png" alt=""></li>
-          <li><img class="ictop" src="../images/calendar.png" alt=""></li>
-          <li><img class="ictop" src="../images/wetter.png" alt=""></li>
-          <li><img class="ictop" src="../images/wetter.png" alt=""></li>
-        </ul>
-      </nav>
-      <!-- ################################################################################################ -->
-    </header>
-  </div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
 <div class="wrapper row1">
   <header id="header" class="clear">
     <!-- ################################################################################################ -->
@@ -50,11 +38,12 @@ Licence URI: http://www.os-templates.com/template-terms
     </div>
     <nav id="mainav">
       <ul class="clear">
-        <li><a href="gallery.html"><img class="icon" src="../images/music.png" alt=""></a></li>
-        <li class="active"><a href="karte.html"><img class="icon" src="../images/karte.png" alt=""></a></li>
-        <li><a href="kontakte.html"><img class="icon" src="../images/kontakte.png" alt=""></a></li>
-        <li><a href="kalender.html"><img class="icon" src="../images/calendar.png" alt=""></a></li>
-        <li><a href="wetter.html"><img class="icon" src="../images/wetter.png" alt=""></a></li>
+        <li><a href="gallery.html">Media</a></li>
+        <li class="active"><a href="#">Karte</a></li>
+        <li><a href="#">Link Text</a></li>
+        <li><a class="drop" href="#">Dropdown</a>
+        </li>
+        <li><a href="#">Link Text</a></li>
         <li><a href="#">Link Text</a></li>
       </ul>
     </nav>
@@ -79,24 +68,23 @@ Licence URI: http://www.os-templates.com/template-terms
     <!-- ########################################################################################## -->
     <div id="mapCanvas">&#160;</div>
     <div id="directionsPanel">
-        <a href="#geoLocation" id="useGPS">Use My Location</a>
-        <p class="or">[OR]</p>
+        <a href="#geoLocation" id="useGPS">Mein Standort</a>
+        <p class="or">ODER</p>
         <div class="directionInputs">
             <form>
                 <p>
                     <label>A</label>
-                    <input type="text" value="" id="dirSource" />
+                    <input type="text" value="" id="dirSource" placeholder="Geben Sie einen Standort ein." autocomplete="off">
                 </p>
                 <p>
                     <label>B</label>
-                    <input type="text" value="" id="dirDestination" />
-                </p>
-                <a href="#getDirections" id="getDirections">Get Directions</a>
+                    <input type="text" value="" id="dirDestination" placeholder="Geben Sie einen Standort ein." autocomplete="off">                </p>
+                <a href="#getDirections" id="getDirections">Route</a>
                 <a href="#reset" id="paneReset">Reset</a>
             </form>
         </div>
         <div id="directionSteps">
-            <p class="msg">Direction Steps Will Render Here</p>
+            <p class="msg">Schritte werden hier ausgeführt </p>
         </div>
         <a href="#toggleBtn" id="paneToggle" class="out">&lt;</a>
     </div>
@@ -106,12 +94,12 @@ Licence URI: http://www.os-templates.com/template-terms
     function init() {
         initMap();
     }
-    </script>
+    </script> 
     <div id="map"></div>
-
-
-
-
+    
+   
+    
+   
     <!-- ########################################################################################## -->
     <!-- / container body -->
     <div class="clear"></div>
